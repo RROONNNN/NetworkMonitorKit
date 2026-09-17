@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F49548D3305BDCD200E6BE70 /* NetworkMonitorKit in Frameworks */ = {isa = PBXBuildFile; productRef = F49548D2305BDCD200E6BE70 /* NetworkMonitorKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F4E77E0D305BD9AA0021A352 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49548D3305BDCD200E6BE70 /* NetworkMonitorKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +77,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F49548D1305BDCD200E6BE70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F4E77DF6305BD9A90021A352 = {
 			isa = PBXGroup;
 			children = (
 				F4E77E01305BD9A90021A352 /* NetworkMonitorDemo */,
 				F4E77E0F305BD9AA0021A352 /* NetworkMonitorDemoTests */,
 				F4E77E19305BD9AA0021A352 /* NetworkMonitorDemoUITests */,
+				F49548D1305BDCD200E6BE70 /* Frameworks */,
 				F4E77E00305BD9A90021A352 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +125,7 @@
 			);
 			name = NetworkMonitorDemo;
 			packageProductDependencies = (
+				F49548D2305BDCD200E6BE70 /* NetworkMonitorKit */,
 			);
 			productName = NetworkMonitorDemo;
 			productReference = F4E77DFF305BD9A90021A352 /* NetworkMonitorDemo.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = F4E77DF6305BD9A90021A352;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F4E77E29305BDA060021A352 /* XCLocalSwiftPackageReference "../../NetworkMonitorKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F4E77E00305BD9A90021A352 /* Products */;
 			projectDirPath = "";
@@ -570,6 +587,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		F4E77E29305BDA060021A352 /* XCLocalSwiftPackageReference "../../NetworkMonitorKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../NetworkMonitorKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F49548D2305BDCD200E6BE70 /* NetworkMonitorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4E77E29305BDA060021A352 /* XCLocalSwiftPackageReference "../../NetworkMonitorKit" */;
+			productName = NetworkMonitorKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F4E77DF7305BD9A90021A352 /* Project object */;
 }
